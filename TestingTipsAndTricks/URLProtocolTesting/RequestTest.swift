@@ -28,21 +28,13 @@ func ==(lhs: PointOfInterest, rhs: PointOfInterest) -> Bool {
     return areEqual
 }
 
-
+/// 此介面定義了一個基本的產生Request , parseResponse
 protocol APIRequest {
     associatedtype RequestDataType
     associatedtype ResponseDataType
     func makeRequest(from data: RequestDataType) throws -> URLRequest
     func parseResponse(data: Data) throws -> ResponseDataType
 }
-
-
-//protocol APIRequest {
-//    associatedtype RequestDataType
-//    associatedtype ResponseDataType
-//    func makeRequest(from data: TCStokItem) throws -> URLRequest
-//    func parseResponse(data: Data) throws -> TCResponse
-//}
 
 struct PointsOfInterestRequest : APIRequest {
     func makeRequest(from coordinate: CLLocationCoordinate2D) throws -> URLRequest {

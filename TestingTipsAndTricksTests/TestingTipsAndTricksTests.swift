@@ -50,8 +50,7 @@ class TestingTipsAndTricksTests: XCTestCase {
             expectation.fulfill()
         }
         wait(for: [expectation], timeout: 1000)
-        
-        
+ 
     }
     
     func testPerformanceExample() {
