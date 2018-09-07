@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B618EDFD212F381F002005FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B618EDFC212F381F002005FB /* AppDelegate.swift */; };
-		B618EDFF212F381F002005FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B618EDFE212F381F002005FB /* ViewController.swift */; };
 		B618EE02212F381F002005FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B618EE00212F381F002005FB /* Main.storyboard */; };
 		B618EE04212F3825002005FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B618EE03212F3825002005FB /* Assets.xcassets */; };
 		B618EE07212F3825002005FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B618EE05212F3825002005FB /* LaunchScreen.storyboard */; };
@@ -16,13 +15,13 @@
 		B618EE1D212F3825002005FB /* TestingTipsAndTricksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B618EE1C212F3825002005FB /* TestingTipsAndTricksUITests.swift */; };
 		B618EE2C212F395F002005FB /* RequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B618EE2B212F395F002005FB /* RequestTest.swift */; };
 		B618EE2F212FF27C002005FB /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B618EE2D212F3EE8002005FB /* MockURLProtocol.swift */; };
-		B6475D7621393D4000812E6B /* TaipeiMailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6475D7521393D4000812E6B /* TaipeiMailViewController.swift */; };
-		B6475D7821393F5200812E6B /* TaipeiMailRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6475D7721393F5200812E6B /* TaipeiMailRequest.swift */; };
-		B6475D7A2139411400812E6B /* TaipeiMailAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6475D792139411400812E6B /* TaipeiMailAPITests.swift */; };
-		B6475D7F21394E1000812E6B /* fakeData.json in Resources */ = {isa = PBXBuildFile; fileRef = B6475D7E21394E1000812E6B /* fakeData.json */; };
-		B6A2033921402286005418C3 /* TaipeiMailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A2033821402286005418C3 /* TaipeiMailViewModel.swift */; };
-		B6A2033C21402390005418C3 /* TaipeiMailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A2033B21402390005418C3 /* TaipeiMailTableViewCell.swift */; };
-		B6A2033E214023B6005418C3 /* TaipeiMailCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A2033D214023B6005418C3 /* TaipeiMailCellViewModel.swift */; };
+		B6475D7621393D4000812E6B /* TaipeiInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6475D7521393D4000812E6B /* TaipeiInfoViewController.swift */; };
+		B6475D7A2139411400812E6B /* TaipeiAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6475D792139411400812E6B /* TaipeiAPITests.swift */; };
+		B6601E582141437800D88343 /* TaipeiInfoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6601E552141437800D88343 /* TaipeiInfoRequest.swift */; };
+		B6601E592141437800D88343 /* fakeData.json in Resources */ = {isa = PBXBuildFile; fileRef = B6601E572141437800D88343 /* fakeData.json */; };
+		B6A2033921402286005418C3 /* TaipeiInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A2033821402286005418C3 /* TaipeiInfoViewModel.swift */; };
+		B6A2033C21402390005418C3 /* TaipeiInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A2033B21402390005418C3 /* TaipeiInfoTableViewCell.swift */; };
+		B6A2033E214023B6005418C3 /* TaipeiInfoCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A2033D214023B6005418C3 /* TaipeiInfoCellViewModel.swift */; };
 		B6A2034021403B26005418C3 /* TaipeiAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A2033F21403B26005418C3 /* TaipeiAPIManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,13 +58,13 @@
 		B618EE1E212F3825002005FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B618EE2B212F395F002005FB /* RequestTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTest.swift; sourceTree = "<group>"; };
 		B618EE2D212F3EE8002005FB /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
-		B6475D7521393D4000812E6B /* TaipeiMailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaipeiMailViewController.swift; sourceTree = "<group>"; };
-		B6475D7721393F5200812E6B /* TaipeiMailRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaipeiMailRequest.swift; sourceTree = "<group>"; };
-		B6475D792139411400812E6B /* TaipeiMailAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaipeiMailAPITests.swift; sourceTree = "<group>"; };
-		B6475D7E21394E1000812E6B /* fakeData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fakeData.json; sourceTree = "<group>"; };
-		B6A2033821402286005418C3 /* TaipeiMailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaipeiMailViewModel.swift; sourceTree = "<group>"; };
-		B6A2033B21402390005418C3 /* TaipeiMailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaipeiMailTableViewCell.swift; sourceTree = "<group>"; };
-		B6A2033D214023B6005418C3 /* TaipeiMailCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaipeiMailCellViewModel.swift; sourceTree = "<group>"; };
+		B6475D7521393D4000812E6B /* TaipeiInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaipeiInfoViewController.swift; sourceTree = "<group>"; };
+		B6475D792139411400812E6B /* TaipeiAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaipeiAPITests.swift; sourceTree = "<group>"; };
+		B6601E552141437800D88343 /* TaipeiInfoRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaipeiInfoRequest.swift; sourceTree = "<group>"; };
+		B6601E572141437800D88343 /* fakeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fakeData.json; sourceTree = "<group>"; };
+		B6A2033821402286005418C3 /* TaipeiInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaipeiInfoViewModel.swift; sourceTree = "<group>"; };
+		B6A2033B21402390005418C3 /* TaipeiInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaipeiInfoTableViewCell.swift; sourceTree = "<group>"; };
+		B6A2033D214023B6005418C3 /* TaipeiInfoCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaipeiInfoCellViewModel.swift; sourceTree = "<group>"; };
 		B6A2033F21403B26005418C3 /* TaipeiAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaipeiAPIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,7 +133,7 @@
 			children = (
 				B618EE11212F3825002005FB /* TestingTipsAndTricksTests.swift */,
 				B618EE13212F3825002005FB /* Info.plist */,
-				B6475D792139411400812E6B /* TaipeiMailAPITests.swift */,
+				B6475D792139411400812E6B /* TaipeiAPITests.swift */,
 			);
 			path = TestingTipsAndTricksTests;
 			sourceTree = "<group>";
@@ -157,19 +156,19 @@
 			path = URLProtocolTesting;
 			sourceTree = "<group>";
 		};
-		B6475D7421393CC200812E6B /* TaipeiMailInfoAPI */ = {
+		B6601E542141437800D88343 /* TaipeiInfoAPI */ = {
 			isa = PBXGroup;
 			children = (
-				B6475D7B21394DED00812E6B /* Resource */,
-				B6475D7721393F5200812E6B /* TaipeiMailRequest.swift */,
+				B6601E552141437800D88343 /* TaipeiInfoRequest.swift */,
+				B6601E562141437800D88343 /* Resource */,
 			);
-			path = TaipeiMailInfoAPI;
+			path = TaipeiInfoAPI;
 			sourceTree = "<group>";
 		};
-		B6475D7B21394DED00812E6B /* Resource */ = {
+		B6601E562141437800D88343 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				B6475D7E21394E1000812E6B /* fakeData.json */,
+				B6601E572141437800D88343 /* fakeData.json */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -177,10 +176,10 @@
 		B6A2033521402178005418C3 /* TaipeiInfo */ = {
 			isa = PBXGroup;
 			children = (
+				B6601E542141437800D88343 /* TaipeiInfoAPI */,
 				B6A2033A2140228F005418C3 /* Helper */,
 				B6A20337214021A6005418C3 /* View */,
 				B6A203362140219F005418C3 /* ViewModel */,
-				B6475D7421393CC200812E6B /* TaipeiMailInfoAPI */,
 			);
 			path = TaipeiInfo;
 			sourceTree = "<group>";
@@ -188,8 +187,8 @@
 		B6A203362140219F005418C3 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				B6A2033821402286005418C3 /* TaipeiMailViewModel.swift */,
-				B6A2033D214023B6005418C3 /* TaipeiMailCellViewModel.swift */,
+				B6A2033821402286005418C3 /* TaipeiInfoViewModel.swift */,
+				B6A2033D214023B6005418C3 /* TaipeiInfoCellViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -197,8 +196,8 @@
 		B6A20337214021A6005418C3 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B6475D7521393D4000812E6B /* TaipeiMailViewController.swift */,
-				B6A2033B21402390005418C3 /* TaipeiMailTableViewCell.swift */,
+				B6475D7521393D4000812E6B /* TaipeiInfoViewController.swift */,
+				B6A2033B21402390005418C3 /* TaipeiInfoTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -317,8 +316,8 @@
 			files = (
 				B618EE07212F3825002005FB /* LaunchScreen.storyboard in Resources */,
 				B618EE04212F3825002005FB /* Assets.xcassets in Resources */,
-				B6475D7F21394E1000812E6B /* fakeData.json in Resources */,
 				B618EE02212F381F002005FB /* Main.storyboard in Resources */,
+				B6601E592141437800D88343 /* fakeData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,15 +342,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6A2033C21402390005418C3 /* TaipeiMailTableViewCell.swift in Sources */,
+				B6A2033C21402390005418C3 /* TaipeiInfoTableViewCell.swift in Sources */,
 				B618EE2C212F395F002005FB /* RequestTest.swift in Sources */,
-				B618EDFF212F381F002005FB /* ViewController.swift in Sources */,
 				B6A2034021403B26005418C3 /* TaipeiAPIManager.swift in Sources */,
-				B6A2033E214023B6005418C3 /* TaipeiMailCellViewModel.swift in Sources */,
+				B6601E582141437800D88343 /* TaipeiInfoRequest.swift in Sources */,
+				B6A2033E214023B6005418C3 /* TaipeiInfoCellViewModel.swift in Sources */,
 				B618EDFD212F381F002005FB /* AppDelegate.swift in Sources */,
-				B6A2033921402286005418C3 /* TaipeiMailViewModel.swift in Sources */,
-				B6475D7621393D4000812E6B /* TaipeiMailViewController.swift in Sources */,
-				B6475D7821393F5200812E6B /* TaipeiMailRequest.swift in Sources */,
+				B6A2033921402286005418C3 /* TaipeiInfoViewModel.swift in Sources */,
+				B6475D7621393D4000812E6B /* TaipeiInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,7 +357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6475D7A2139411400812E6B /* TaipeiMailAPITests.swift in Sources */,
+				B6475D7A2139411400812E6B /* TaipeiAPITests.swift in Sources */,
 				B618EE12212F3825002005FB /* TestingTipsAndTricksTests.swift in Sources */,
 				B618EE2F212FF27C002005FB /* MockURLProtocol.swift in Sources */,
 			);
@@ -527,6 +525,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_NS_ASSERTIONS = NO;
 				INFOPLIST_FILE = TestingTipsAndTricks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -562,6 +561,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_NS_ASSERTIONS = NO;
 				INFOPLIST_FILE = TestingTipsAndTricksTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

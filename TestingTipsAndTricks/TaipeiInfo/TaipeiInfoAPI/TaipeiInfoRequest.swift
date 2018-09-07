@@ -8,16 +8,21 @@
 
 import UIKit
 
-/// taupei Mail request
-struct TaipeiMailRequest : APIRequest {
+/// taipei Info request
+struct TaipeiInfoRequest : APIRequest {
     
     let base_url = "http://data.taipei/opendata/datalist/apiAccess"
+    
     func makeRequest(from queryKey: String) throws -> URLRequest {
         var components = URLComponents(string: "\(base_url)?scope=datasetMetadataSearch")!
         components.queryItems = [
             URLQueryItem(name: "scope", value: "datasetMetadataSearch"),
-            URLQueryItem(name: "q", value: "\(queryKey)")
+            URLQueryItem(name: "limit", value: "10")
         ]
+        
+        if queryKey.count != 0 {
+            components.queryItems?.append(URLQueryItem(name: "q", value: "\(queryKey)"))
+        }
         return URLRequest(url: components.url!)
     }
     
@@ -28,7 +33,7 @@ struct TaipeiMailRequest : APIRequest {
     }
 }
 
-// Mark: s
+// MARK: - Zzzz
 
 /// response of root
 struct TaipeiAPIResponse : Codable {
@@ -46,8 +51,8 @@ struct TaipeiAPIResult : Codable {
 
 /// response of item
 struct TaipeiAPIItem : Codable {
-    var id : String
-    var title : String
-    var type : String
-    var category : String
+    var id : String?
+    var title : String?
+    var type : String?
+    var category : String?
 }

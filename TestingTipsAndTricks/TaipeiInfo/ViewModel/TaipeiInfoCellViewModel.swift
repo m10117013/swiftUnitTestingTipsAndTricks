@@ -8,21 +8,21 @@
 
 import UIKit
 
-class TaipeiMailCellViewModel: NSObject {
+class TaipeiInfoCellViewModel: NSObject {
 
     var Title : String {
         get {
-            return item?.title ?? ""
+            return item?.title ?? "unknow"
         }
     }
     var ID : String {
         get {
-            return item?.id ?? ""
+            return item?.id ?? "unknow"
         }
     }
     var Detail : String {
         get {
-            return item?.title ?? ""
+            return item?.category ?? "unknow"
         }
     }
     
@@ -36,3 +36,5 @@ class TaipeiMailCellViewModel: NSObject {
         self.item = item
     }
 }
+
+

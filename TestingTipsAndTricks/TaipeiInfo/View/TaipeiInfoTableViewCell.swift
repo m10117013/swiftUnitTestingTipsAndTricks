@@ -1,5 +1,5 @@
 //
-//  TaipeiMailTableViewCell.swift
+//  TaipeiInfoTableViewCell.swift
 //  TestingTipsAndTricks
 //
 //  Created by wei on 2018/9/5.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TaipeiMailTableViewCell: UITableViewCell {
+class TaipeiInfoTableViewCell: UITableViewCell {
 
     @IBOutlet weak var TitleLabel : UILabel!
     
@@ -16,7 +16,7 @@ class TaipeiMailTableViewCell: UITableViewCell {
     
     @IBOutlet weak var DescriptionLabel : UILabel!
     
-    var viewModel : TaipeiMailCellViewModel? {
+    var viewModel : TaipeiInfoCellViewModel? {
         didSet {
             TitleLabel.text = viewModel?.Title
             keyLabel.text = viewModel?.ID

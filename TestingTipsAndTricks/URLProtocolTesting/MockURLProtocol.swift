@@ -7,8 +7,8 @@
 //
 
 import XCTest
-//import UIKit
 
+/// mocking URL protocol
 class MockURLProtocol: URLProtocol {
 
     static var requestHandler : ((URLRequest) throws -> (HTTPURLResponse , Data))?
@@ -23,7 +23,7 @@ class MockURLProtocol: URLProtocol {
     }
     
     override func startLoading() {
-        guard let handler = MockURLProtocol.requestHandler  else {
+        guard let handler = MockURLProtocol.requestHandler else {
             XCTFail("Received unexpected request with no handler set")
             return
         }
@@ -41,5 +41,4 @@ class MockURLProtocol: URLProtocol {
     override func stopLoading() {
         //do nothing
     }
-
 }

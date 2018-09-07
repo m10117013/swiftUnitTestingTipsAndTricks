@@ -16,10 +16,13 @@ class TaipeiAPIManager: NSObject {
         self.session = session
     }
     
-    func loadDatas(handler : @escaping (_ result:TaipeiAPIResult?)->Void ) -> Void {
-        let request = TaipeiMailRequest()
-        let loader: APIRequestLoader<TaipeiMailRequest> = APIRequestLoader(apiRequest: request, urlSession: session)
-        loader.loadAPIRequest(requestData: "臺北市文化快遞資訊") { result, error in
+    /// loading taipei API data
+    ///
+    /// - Parameter handler: <#handler description#>
+    func loadDatas(handler : @escaping (_ result:TaipeiAPIResult?) -> Void ) -> Void {
+        let request = TaipeiInfoRequest()
+        let loader: APIRequestLoader<TaipeiInfoRequest> = APIRequestLoader(apiRequest: request, urlSession: session)
+        loader.loadAPIRequest(requestData: "") { result, error in
             handler(result?.result)
         }
     }

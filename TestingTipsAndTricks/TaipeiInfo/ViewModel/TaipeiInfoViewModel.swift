@@ -8,12 +8,19 @@
 
 import UIKit
 
-class TaipeiMailViewModel: NSObject {
-
+class TaipeiInfoViewModel: NSObject {
+    
+    enum TaipeiInfoViewModelError:Error {
+        case itemsWasOutOfBounds
+    }
+    
+    /// API manager
     public var manager : TaipeiAPIManager = TaipeiAPIManager()
     
-    private var items : [TaipeiAPIItem]?
+    /// items
+    public var items : [TaipeiAPIItem]?
     
+    /// session
     var session : URLSession!
     
     /// reloading datas
@@ -35,16 +42,11 @@ class TaipeiMailViewModel: NSObject {
     ///
     /// - Parameter index: index of items
     /// - Returns: cellViewModel
-    public func cellViewModel(at index:Int) -> TaipeiMailCellViewModel {
-        guard let item = self.items , item.count > index else {
-            assert(false, "items was out of bounds")
-             return TaipeiMailCellViewModel()
-        } 
-        
-        if let item = items?[index] {
-            return TaipeiMailCellViewModel(with: item)
+    public  func cellViewModel(at index:Int) throws -> TaipeiInfoCellViewModel {
+        guard let items = self.items , items.count > index else {
+            throw TaipeiInfoViewModelError.itemsWasOutOfBounds
+//            assert(false, "items was out of bounds")
         }
-        assert(false, "item can't be nil")
-        return TaipeiMailCellViewModel()
+        return TaipeiInfoCellViewModel(with: items[index])
     }
 }

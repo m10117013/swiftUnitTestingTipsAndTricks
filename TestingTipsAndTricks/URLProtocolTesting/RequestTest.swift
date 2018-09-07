@@ -50,7 +50,6 @@ struct PointsOfInterestRequest : APIRequest {
         return URLRequest(url: components.url!)
     }
     
-    
     func parseResponse(data: Data) throws -> [PointOfInterest] {
         return try JSONDecoder().decode([PointOfInterest].self, from: data)
     }
