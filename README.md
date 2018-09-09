@@ -2,7 +2,6 @@
 
 [![Build Status](https://travis-ci.org/m10117013/swiftUnitTestingTipsAndTricks.svg?branch=master)](https://travis-ci.org/m10117013/swiftUnitTestingTipsAndTricks)
 
-[![Coverage Status](https://coveralls.io/repos/github/m10117013/swiftUnitTestingTipsAndTricks/badge.svg?branch=master)](https://coveralls.io/github/m10117013/swiftUnitTestingTipsAndTricks?branch=master)
 
 
 * 測試金字塔
