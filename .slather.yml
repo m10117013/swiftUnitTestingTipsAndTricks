@@ -1,0 +1,6 @@
+coverage_service: coveralls
+xcodeproj: TestingTipsAndTricks.xcodeproj
+scheme: TestingTipsAndTricks
+ignore:
+  - ExamplePodCode/*
+  - ProjectTestsGroup/*

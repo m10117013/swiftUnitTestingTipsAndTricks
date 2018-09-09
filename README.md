@@ -1,5 +1,9 @@
 # IOS單元側試技巧與提示
 
+[![Build Status](https://travis-ci.org/m10117013/swiftUnitTestingTipsAndTricks.svg?branch=master)](https://travis-ci.org/m10117013/swiftUnitTestingTipsAndTricks)
+
+
+
 * 測試金字塔
 
 ![](./resource/test_pyramid.gif)
