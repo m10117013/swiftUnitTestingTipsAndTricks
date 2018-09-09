@@ -3,6 +3,8 @@ xcode_project: TestingTipsAndTricks.xcodeproj # path to your xcodeproj folder
 xcode_scheme: TestingTipsAndTricks
 xcode_destination: platform=iOS Simulator,OS=11.3,name=iPhone X
 
-before_install: rvm use $RVM_RUBY_VERSION
-install: bundle install --without=documentation --path ../travis_bundle_dir
-after_success: slather
+before_install:
+- gem i slather --no-ri --no-rdoc
+install:
+after_success: 
+slather
