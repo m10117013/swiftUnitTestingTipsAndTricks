@@ -4,7 +4,7 @@ xcode_scheme: TestingTipsAndTricks
 xcode_destination: platform=iOS Simulator,OS=11.3,name=iPhone X
 
 before_install:
-- gem i slather --no-ri --no-rdoc
+gem i slather --no-ri --no-rdoc
 install:
 after_success: 
 slather
